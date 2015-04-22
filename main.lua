@@ -4,6 +4,9 @@ require "man"
 numberOfMen = 12
 
 function love.load()
+
+	love.window.setMode( 800, 550, flags )
+
 	--loading classes
 	man.load()
 	--terrain.load()
@@ -14,6 +17,8 @@ function love.update(dt)
 end
 
 function love.draw()
+
+	love.graphics.circle( "line", 400, 250, 200, numberOfMen )
 	--DRAW_TERRAIN()
 	DRAW_MAN()
 	

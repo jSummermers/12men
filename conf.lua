@@ -1,6 +1,4 @@
 function love.conf(t)
-	t.title = "platformer"
+	t.title = "12_men"
 	t.console = true
-	--t.screen.width = 1200
-	--t.screen.height = 750
 end

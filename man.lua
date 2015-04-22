@@ -25,13 +25,17 @@ function man.draw()
 	
 	love.graphics.setColor(255,0,0)
 	love.graphics.rectangle("line", man.x, man.y, man.width, man.height)
+
+	
 end
 
 function man.setPosition(numberOfMen) 
 	
 	-- TODO: do code to put each person in their position on the clock
-	-- 		 according to how many men there are
-
+	-- 	 according to how many men there are
+	--	 (x−h)^2+(y−k)^2=r2
+	
+	
 	man.adjustForCenterXY()
 	
 	man.isPositionSet = true
@@ -40,7 +44,6 @@ end
 function man.adjustForCenterXY()
 	man.x = man.centerX - man.width/2
 	man.y = man.centerY - man.height/2
-	
 end
 
 --[[
