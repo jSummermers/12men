@@ -43,7 +43,7 @@ end
 
 function man.adjustForCenterXY()
 	man.x = man.centerX - man.width/2
-	man.y = man.centerY - man.height/2
+	man.y = man.centerY - man.height*3/4
 end
 
 --[[
